@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { FilmsService } from '../films.service';
+import { Film } from '../interface/film';
 
 @Component({
   selector: 'app-films-list',
@@ -6,10 +8,15 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./films-list.component.css']
 })
 export class FilmsListComponent implements OnInit {
+  filmsList: Film[] = [];
 
-  constructor() { }
+  constructor(private filmsService: FilmsService) { }
 
   ngOnInit(): void {
+    this.filmsService.getTrendingFilms().subscribe(res => {
+      console.log(res);
+      
+    })
   }
 
 }

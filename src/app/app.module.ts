@@ -12,10 +12,10 @@ import { FilmsModule } from './films/films.module';
     AppComponent
   ],
   imports: [
+    MaterialModule,
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    MaterialModule,
     FilmsModule
   ],
   providers: [],

@@ -3,6 +3,8 @@ import { CommonModule } from '@angular/common';
 import { FilmsListComponent } from './films-list/films-list.component';
 import { FilmsPageComponent } from './films-page/films-page.component';
 import { FilmsRoutingModule } from './films-routing.module';
+import { MaterialModule } from '../material.module';
+import { HttpClientModule } from '@angular/common/http';
 
 
 
@@ -13,7 +15,9 @@ import { FilmsRoutingModule } from './films-routing.module';
   ],
   imports: [
     CommonModule,
-    FilmsRoutingModule
+    FilmsRoutingModule,
+    MaterialModule,
+    HttpClientModule
   ]
 })
 export class FilmsModule { }
