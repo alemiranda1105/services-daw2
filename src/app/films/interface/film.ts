@@ -1,4 +1,5 @@
 export interface Film {
+    id: number
     poster_path: string | null
     adult: boolean
     overview: string
@@ -7,4 +8,5 @@ export interface Film {
     title: string
     original_title: string
     popularity: number
+    vote_average: number
 }

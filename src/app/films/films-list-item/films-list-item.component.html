@@ -5,4 +5,11 @@
         </mat-card-title>
     </mat-card-header>
     <img mat-card src="https://image.tmdb.org/t/p/original/{{film.poster_path}}" alt="image from the movie">
+    <mat-card-content>
+        <h3><strong>Release date:</strong> {{film.release_date}}</h3>
+        <h3><strong>Score:</strong> {{film.vote_average}}</h3>
+    </mat-card-content>
+    <mat-card-actions>
+        
+    </mat-card-actions>
 </mat-card>
