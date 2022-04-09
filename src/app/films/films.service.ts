@@ -3,7 +3,7 @@ import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { environment } from 'src/environments/environment';
 import { ApiResponse } from './interface/api-response';
-import { Film } from './interface/film';
+import { Film, FilmDetails } from './interface/film';
 import { GenresList } from './interface/genres-list';
 
 @Injectable({
@@ -32,8 +32,8 @@ export class FilmsService {
     });
   }
 
-  getFilmById(id: number): Observable<Film> {
-    return this.httpClient.get<Film>(`${this.apiConfig.url}/3/movie/${id}?api_key=${this.apiConfig.token}&language=en-US`, {
+  getFilmById(id: number): Observable<FilmDetails> {
+    return this.httpClient.get<FilmDetails>(`${this.apiConfig.url}/3/movie/${id}?api_key=${this.apiConfig.token}&language=en-US`, {
       headers: {
         "Authorization": `Bearer ${this.apiConfig.token}`,
         "Content-Type": "application/json;charset=utf-8"

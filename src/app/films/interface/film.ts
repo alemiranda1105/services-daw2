@@ -10,3 +10,10 @@ export interface Film {
     popularity: number
     vote_average: number
 }
+
+export interface FilmDetails extends Film {
+    genres: [{
+        id: number,
+        name: string
+    }]
+}

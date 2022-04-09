@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { FilmsService } from '../films.service';
-import { ApiResponse } from '../interface/api-response';
 import { Film } from '../interface/film';
 
 @Component({
@@ -16,6 +15,10 @@ export class FilmsListComponent implements OnInit {
   ngOnInit(): void {
     this.filmsService.getTrendingFilms().subscribe(res => {
       this.filmsList = res.results;
+    });
+
+    this.filmsService.getGenres().subscribe(res => {
+      sessionStorage.setItem('genres', JSON.stringify(res.genres));
     });
   }
 

@@ -22,6 +22,13 @@
         
         <h2>Score</h2>
         <h4>{{film.vote_average}}</h4>
+
+        <h2 *ngIf="film.genres.length > 0">Genres</h2>
+        <div class="genres">
+            <div *ngFor="let g of film.genres" class="genres-container">
+                {{g.name}}
+            </div>
+        </div>
         
         <h2>Overview</h2>
         <p>{{film.overview}}</p>

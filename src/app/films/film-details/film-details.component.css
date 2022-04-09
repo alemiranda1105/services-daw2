@@ -40,6 +40,22 @@
     font-weight: bolder;
 }
 
+.genres {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 35%;
+}
+
+.genres-container {
+    margin: 10px;
+    padding: 7.5px;
+    border-radius: 30px;
+    font-weight: 600;
+    font-size: smaller;
+    background-color: rgba(133, 133, 133, 0.411);
+}
+
 img {
     object-fit: cover;
     width: 100%;

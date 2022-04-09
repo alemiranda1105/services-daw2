@@ -1,6 +1,20 @@
+.genres-container {
+    margin: 10px;
+    padding: 7.5px;
+    border-radius: 30px;
+    font-weight: 600;
+    font-size: smaller;
+    background-color: rgba(133, 133, 133, 0.411);
+}
+
 mat-card {
     margin: 1.25rem;
     width: 180px;
+    transition: 150ms;
+}
+
+mat-card:hover {
+    width: 220px;
 }
 
 mat-card-header {
@@ -18,6 +32,13 @@ mat-card-content {
     flex-direction: column;
     align-items: center;
     padding: 10px;
+}
+
+mat-card-footer {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-content: center;
 }
 
 a {

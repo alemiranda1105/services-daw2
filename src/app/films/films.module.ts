@@ -15,7 +15,7 @@ import { FilmDetailsComponent } from './film-details/film-details.component';
     FilmsListComponent,
     FilmsPageComponent,
     FilmsListItemComponent,
-    FilmDetailsComponent
+    FilmDetailsComponent,
   ],
   imports: [
     CommonModule,

@@ -7,7 +7,12 @@
     <img mat-card src="https://image.tmdb.org/t/p/original/{{film.poster_path}}" alt="image from the movie">
     <mat-card-content>
         <h3><strong>Release date:</strong> {{film.release_date}}</h3>
-        <h3><strong>Score:</strong> {{film.vote_average}}</h3>
+        <h3><strong>Score:</strong> {{film.vote_average}}</h3>     
+        <mat-card-footer *ngIf="genres.length > 0">
+            <div *ngFor="let g of genres" class="genres-container">
+                {{g}}
+            </div>
+        </mat-card-footer>
     </mat-card-content>
     <mat-card-actions>
         <a mat-button color="primary" [routerLink]="['/details/' + film.id]">Details <mat-icon>chevron_right</mat-icon></a>

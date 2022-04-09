@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute, Router } from '@angular/router';
+import { ActivatedRoute } from '@angular/router';
 import { switchMap } from 'rxjs';
 import { FilmsService } from '../films.service';
-import { Film } from '../interface/film';
+import { Film, FilmDetails } from '../interface/film';
 
 @Component({
   selector: 'app-film-details',
@@ -10,11 +10,10 @@ import { Film } from '../interface/film';
   styleUrls: ['./film-details.component.css']
 })
 export class FilmDetailsComponent implements OnInit {
-  film?: Film;
+  film?: FilmDetails;
 
   constructor(
     private activatedRoute: ActivatedRoute,
-    private router: Router,
     private filmsService: FilmsService
     ) { }
 
@@ -23,7 +22,9 @@ export class FilmDetailsComponent implements OnInit {
     .pipe(
       switchMap( ({id}) => this.filmsService.getFilmById(id) )
     )
-    .subscribe( film => this.film = film);
+    .subscribe( film => {
+      this.film = film;
+    });
   }
 
 }
