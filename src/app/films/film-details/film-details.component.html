@@ -1,0 +1,29 @@
+<div class="container">
+    <h1>Details</h1>
+    <div class="details-container" *ngIf="film">
+        <div class="warning" color="accent" *ngIf="film.adult">
+            <h2>Warning!</h2>
+            <p>
+                This movie if for adults, if you are underage
+                please, go back.
+                (At least, I warned you, we all know you are gonna ignore this :( )
+            </p>
+        </div>
+        <img mat-card src="https://image.tmdb.org/t/p/original/{{film.poster_path}}" alt="image from the movie">
+        
+        <h2>Title</h2>
+        <h4>{{film.title}}</h4>
+
+        <h2>Original title</h2>
+        <h4>{{film.original_title}}</h4>
+        
+        <h2>Popularity</h2>
+        <h4>{{film.popularity}}</h4>
+        
+        <h2>Score</h2>
+        <h4>{{film.vote_average}}</h4>
+        
+        <h2>Overview</h2>
+        <p>{{film.overview}}</p>
+    </div>
+</div>

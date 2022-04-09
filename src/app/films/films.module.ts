@@ -6,6 +6,7 @@ import { FilmsRoutingModule } from './films-routing.module';
 import { MaterialModule } from '../material.module';
 import { HttpClientModule } from '@angular/common/http';
 import { FilmsListItemComponent } from './films-list-item/films-list-item.component';
+import { FilmDetailsComponent } from './film-details/film-details.component';
 
 
 
@@ -13,7 +14,8 @@ import { FilmsListItemComponent } from './films-list-item/films-list-item.compon
   declarations: [
     FilmsListComponent,
     FilmsPageComponent,
-    FilmsListItemComponent
+    FilmsListItemComponent,
+    FilmDetailsComponent
   ],
   imports: [
     CommonModule,

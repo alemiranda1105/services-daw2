@@ -20,6 +20,13 @@ mat-card-content {
     padding: 10px;
 }
 
+a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+}
+
 @media (max-width: 700px) {
     mat-card {
         display: flex;
