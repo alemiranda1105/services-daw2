@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FilmsService } from '../films.service';
+import { ApiResponse } from '../interface/api-response';
 import { Film } from '../interface/film';
 
 @Component({
@@ -14,9 +15,8 @@ export class FilmsListComponent implements OnInit {
 
   ngOnInit(): void {
     this.filmsService.getTrendingFilms().subscribe(res => {
-      console.log(res);
-      
-    })
+      this.filmsList = res.results;
+    });
   }
 
 }

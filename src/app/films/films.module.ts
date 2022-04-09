@@ -5,13 +5,15 @@ import { FilmsPageComponent } from './films-page/films-page.component';
 import { FilmsRoutingModule } from './films-routing.module';
 import { MaterialModule } from '../material.module';
 import { HttpClientModule } from '@angular/common/http';
+import { FilmsListItemComponent } from './films-list-item/films-list-item.component';
 
 
 
 @NgModule({
   declarations: [
     FilmsListComponent,
-    FilmsPageComponent
+    FilmsPageComponent,
+    FilmsListItemComponent
   ],
   imports: [
     CommonModule,
