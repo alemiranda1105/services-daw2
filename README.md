@@ -1,6 +1,6 @@
 # Services app
 
-App usando los servicios de Angular para la asignatura de Desarrollo de Aplicaciones Web II. En concreto el sitio web es una lista de las películas más populares de la plataforma [TheMovieDB](https://www.themoviedb.org/)
+App usando los servicios de Angular para la asignatura de Desarrollo de Aplicaciones Web II. En concreto el sitio web es una lista de las películas más populares de la plataforma [TheMovieDB](https://www.themoviedb.org/) mediante su API pública.
 
 ## ¿Cómo probar?
 
