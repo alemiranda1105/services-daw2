@@ -1,27 +1,22 @@
-# ServicesDaw2
+# Services app
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.2.
+App usando los servicios de Angular para la asignatura de Desarrollo de Aplicaciones Web II. En concreto el sitio web es una lista de las películas más populares de la plataforma [TheMovieDB](https://www.themoviedb.org/)
 
-## Development server
+## ¿Cómo probar?
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+Para probar este sitio web hay que ejecutar los siguientes comandos:
+1. Primero instalamos los paquetes necesarios:
+`npm install`
+2. Ejecutamos:
+`ng serve --open`
+3. Abrimos la siguiente URL en caso de que no se abra automaticamente con el comando anterior: [localhost:4200](http://localhost:4200/)
 
-## Code scaffolding
+## Tecnologías usadas
+* Angular
+* Typescript
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Autor
+__Alejandro Miranda López__
 
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+_4º Grado de Ingeniería Informática, Universidad de Las Palmas de Gran Canaria_
+_2021/2022_
