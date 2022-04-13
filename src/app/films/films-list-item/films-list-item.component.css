@@ -14,7 +14,8 @@ mat-card {
 }
 
 mat-card:hover {
-    width: 220px;
+    transform: scale(1.1, 1.1);
+    border-radius: 15px;
 }
 
 mat-card-header {
